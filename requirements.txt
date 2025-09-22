@@ -1,4 +1,4 @@
-﻿celery==5.4.0
+celery==5.4.0
 Django==5.1.4
 django-allauth==65.1.0
 django-debug-toolbar==4.4.6
@@ -11,3 +11,4 @@ pillow==11.0.0
 psycopg2==2.9.10
 redis==5.2.1
 requests==2.32.4
+yookassa==3.7.0
