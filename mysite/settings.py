@@ -22,6 +22,9 @@ env = environ.Env(
     EMAIL_HOST_PASSWORD=(str),
     EMAIL_USE_SSL=(bool),
 
+    YOOKASSA_SHOP_ID=(str),
+    YOOKASSA_SECRET_KEY=(str),
+
 )
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -217,3 +220,7 @@ else:
 # запуск celery на windows только через команду celery -A mysite worker -l info -P solo
 CELERY_BROKER_URL = f'redis://{REDIS_HOST}:{REDIS_PORT}'
 CELERY_RESULT_BACKEND = f'redis://{REDIS_HOST}:{REDIS_PORT}'
+
+#yookassa
+YOOKASSA_SHOP_ID = env('YOOKASSA_SHOP_ID')
+YOOKASSA_SECRET_KEY = env('YOOKASSA_SECRET_KEY')
